@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="f-code.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <title>Châu Vĩnh Chí</title>
+</head>
+<body >
+    
+
+    <div class="smoothbackground">
+        <div class="title">
+            <h1 id="cheese" style="color:#ffff">Welcome to my website,
+                 <span style="background-color:#6d646480">i </span><span class="autotype"></span>
+            </h1>
+        </div>
+    </div>
+
+    <div class="fifth">
+        <button id="f"></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        
+        var one = document.querySelector("button:nth-child(1)");
+        var two = document.querySelector("button:nth-child(2)");
+        var three = document.querySelector("button:nth-child(3)");
+        var four = document.querySelector("button:nth-child(4)");
+        var five = document.querySelector("button:nth-child(5)");
+        var background = ["url(fourth.jpg)","url(fifth.jpg)","url(sixth.jpg)","url(seventh.jpg)"];
+
+        var chart =[one,two,three,four,five]
+        var bgcount = 0
+        var count = 1
+        var copied = document.querySelector("button:nth-child(" + count + ")")
+
+        var typed = new Typed(".autotype",{
+            strings: ["'m Cheese","prefer Coding"],
+            typeSpeed:150,
+            backSpeed:70,
+            loop:true,
+        })
+        
+    
+
+       // copied = document.querySelector("button:nth-child(" + count + ")").addEventListener("click",
+        //    function(){
+
+        //    document.querySelector("body").style.backgroundImage = thebackground[bgcount];
+        //    document.querySelector("button:nth-child(" + count + ")").style.transform = "translate(-50px,-200px)";
+        //    document.querySelector("button:nth-child(" + count + ")").style.background = "transparent"
+        //    chart.reverse()
+        //    chart.pop()
+        //    chart.style.background = "transparent"
+
+        //})
+
+
+        var thebackground0 = "url(third.jpg)";
+        document.querySelector("button:nth-child(1)").addEventListener("click",
+        function(){
+            document.querySelector("body").style.backgroundImage = thebackground0;
+            document.querySelector("button:nth-child(1)").style.transform = "translate(-50px,-200px)";
+            document.querySelector("button:nth-child(1)").style.background = "transparent"
+
+        })
+
+        var thebackground1 = "url(fourth.jpg)";
+        document.querySelector("button:nth-child(2)").addEventListener("click",
+        function(){
+            document.querySelector("body").style.backgroundImage = thebackground1;
+            document.querySelector("button:nth-child(2)").style.transform = "translate(-50px,-200px)";
+            document.querySelector("button:nth-child(2)").style.background = "transparent"
+
+        })
+
+        var thebackground2 = "url(fifth.jpg)";
+        document.querySelector("button:nth-child(3)").addEventListener("click",
+        function(){
+            document.querySelector("body").style.backgroundImage = thebackground2;
+            document.querySelector("button:nth-child(3)").style.transform = "translate(-50px,-200px)";
+            document.querySelector("button:nth-child(3)").style.background = "transparent"
+
+        })
+
+        var thebackground3 = "url(sixth.jpg)";
+        document.querySelector("button:nth-child(4)").addEventListener("click",
+        function(){
+            document.querySelector("body").style.backgroundImage = thebackground3;
+            document.querySelector("button:nth-child(4)").style.transform = "translate(-50px,-200px)";
+            document.querySelector("button:nth-child(4)").style.background = "transparent"
+
+        })
+        
+        var thebackground4 = "url(seventh.jpg)";
+        document.querySelector("button:nth-child(5)").addEventListener("click",
+        function(){
+            document.querySelector("body").style.backgroundImage = thebackground4;
+            document.querySelector("button:nth-child(5)").style.transform = "translate(-50px,-200px)";
+            document.querySelector("button:nth-child(5)").style.background = "transparent"
+
+        })
+    
+    </script>
+
+
+</body>
+</html>
