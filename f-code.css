@@ -1,0 +1,154 @@
+body{
+    font-family:'Oswald', sans-serif;
+    background-image: url(second.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    transition:ease-out 0.9s
+}
+
+body::before{
+    content:'';
+    display:block;
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+
+.smoothbackground{
+    position:absolute;
+    width:1000px;
+    height:1000px;
+    display:block;
+    background:linear-gradient(to right,black, transparent);
+    animation: fly-in 1.5s linear running
+}
+
+@keyframes fly-in{
+
+    0%{
+        transform:translateX(-100px);
+        opacity:0;
+    }
+    100%{
+        opacity:1
+    }
+}
+
+@keyframes fly-out{
+
+    0%{
+        transform:translateX(100px);
+        opacity:0;
+    }
+    100%{
+        opacity:1
+    }
+}
+
+.title{
+    position:relative;
+    top:10%;
+    left:10%;
+    letter-spacing:2px;
+    font-size:45px;
+    width:600px;
+}
+
+.fifth{
+    position:absolute;
+    display: flex;
+    width:600px;
+    height: 300px;
+    align-items: center;
+    flex-direction: row;
+    justify-content:space-around;
+    right:5%;
+    top:60%;
+    animation:fly-out 1.5s running linear ;
+    transition: ease-out 0.5;
+}
+
+.fifth button:nth-child(1){
+    background-image: url("third.jpg");
+    background-attachment:local;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    transition: ease-out 0.5s
+}
+
+.fifth button:nth-child(1):hover{
+    transform: translateY(-20px);
+}
+
+.fifth button:nth-child(2):hover{
+    transform: translateY(-20px);
+}
+
+.fifth button:nth-child(3):hover{
+    transform: translateY(-20px);
+}
+
+.fifth button:nth-child(4):hover{
+    transform: translateY(-20px);
+}
+
+.fifth button:nth-child(5):hover{
+    transform: translateY(-20px);
+}
+
+
+
+
+
+.fifth button:nth-child(2){
+    background-image: url("fourth.jpg");
+    background-attachment:local;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    transition: ease-out 0.5s
+}
+
+.fifth button:nth-child(3){
+    background-image: url("fifth.jpg");
+    background-attachment: local;
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    transition: ease-out 0.5s
+}
+
+.fifth button:nth-child(4){
+    background-image:url("sixth.jpg");
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-position: center;
+    background-size:cover;
+    transition: ease-out 0.5s;
+}
+
+.fifth button:nth-child(5){
+    background-image: url("seventh.jpg");
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-position: center;
+    background-size: cover;
+    transition: ease-out 0.5s
+}
+
+.fifth button{
+    position:relative;
+    display:inline-block;
+    width: 110px;
+    height: 170px;
+    border-radius: 12%;
+    border:0;
+}
+
+
+.autotype{
+    background-color:#6d646480;
+}
